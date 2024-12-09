@@ -13,5 +13,6 @@ class JdUnion extends ServiceContainer
 {
     protected $providers = [
         Order\ServiceProvider::class,
+        Promotion\ServiceProvider::class,
     ];
 }

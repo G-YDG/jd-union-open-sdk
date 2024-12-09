@@ -4,7 +4,7 @@ class OrderTest extends AbstractTest
 {
     public function testOrderRowQuery()
     {
-        $response = $this->getApp()->order->orderRowQuery([
+        $response = $this->getApp()->order->rowQuery([
             'pageIndex' => 1,
             'pageSize' => 20,
             'type' => 1,
