@@ -2,7 +2,7 @@
 
 class OrderTest extends AbstractTest
 {
-    public function testOrderRowQuery()
+    public function testRowQuery()
     {
         $response = $this->getApp()->order->rowQuery([
             'pageIndex' => 1,

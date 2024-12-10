@@ -18,7 +18,7 @@ class Promotion extends JdUnionClient
      */
     public function commonGet(array $params): ?array
     {
-        return $this->handlerQueryResult(
+        return $this->handlerGetResult(
             $this->request('jd.union.open.promotion.common.get', ['promotionCodeReq' => $params])
         );
     }
@@ -33,7 +33,7 @@ class Promotion extends JdUnionClient
      */
     public function bySubUnionIdGet(array $params): ?array
     {
-        return $this->handlerQueryResult(
+        return $this->handlerGetResult(
             $this->request('jd.union.open.promotion.bysubunionid.get', ['promotionCodeReq' => $params])
         );
     }
@@ -48,7 +48,7 @@ class Promotion extends JdUnionClient
      */
     public function byUnionIdGet(array $params): ?array
     {
-        return $this->handlerQueryResult(
+        return $this->handlerGetResult(
             $this->request('jd.union.open.promotion.byunionid.get', ['promotionCodeReq' => $params])
         );
     }

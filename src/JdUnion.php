@@ -8,6 +8,7 @@ use Ydg\FoudationSdk\ServiceContainer;
 
 /**
  * @property Order\Order $order
+ * @property Promotion\Promotion $promotion
  */
 class JdUnion extends ServiceContainer
 {

@@ -88,6 +88,21 @@ class JdUnionClient extends FoundationApi
     }
 
     /**
+     * 处理GET请求结果
+     *
+     * @param $result
+     *
+     * @return array
+     */
+    protected function handlerGetResult($result): array
+    {
+        if (isset($result['error_response'])) {
+            return $result;
+        }
+        return json_decode($result['getResult'], true);
+    }
+
+    /**
      * 处理查询请求结果
      *
      * @param $result
